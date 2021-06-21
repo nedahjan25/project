@@ -4,9 +4,11 @@
 		<title> contact </title>
 		
 			<!-- bootstrap for navbar -->
+			<meta charset="utf-8">
 		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 		  <link rel="stylesheet" href="stylesk.css"> 
 		   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
 	</head>
 		<body> 
 					<nav class="navbar navbar-inverse">
@@ -43,19 +45,23 @@
 				
 					<!-- contact -->
 					<h2> Contact Us</h2>
+					<form onsubmit="return validateForm()" method="send" >
 						<fieldset style="width:265px;height:350px;">
 							  <label for="name">Enter your Name:</label>
-							  <input type="text" id="name" name="name" placeholder="NAME"><br><br>
+							  <input type="text" id="name" name="name" placeholder="NAME"required><br><br>
 								<label for="email">Enter your email:</label>
 							  <input type="email" id="email" name="email" placeholder="EMAIL" required><br>
 							  <br>
 								<label for="phone">Enter phone number:</label>
-								<input type="tel" id="phone" name="phone" placeholder="+353">
+								<input type="tel" id="phone" name="phone" placeholder="+353" required>
 								<br>
 								 <label for="comment">Enter your comment:</label>
-								<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="3"></textarea><br>
-							  <input type="submit" value="Submit">
-						</fieldset>
+								<textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="3" required></textarea><br>
+							  <input type="submit" value="Submit" onclick="alert('Submit form, Thank You!')">
+							  <input type="reset" value="Reset Form">
+						</fieldset>					 
+					</form>
+
 
 							<!-- info -->
 						  <h3 class="text-center"> Talk to our friendly support</h3><br>

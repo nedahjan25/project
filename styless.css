@@ -10,9 +10,14 @@ body {
   background-size: cover;
 }
 h1{
-	color: white;
-}
-h2{
-	color: white;
+	
+    color: white;
 	float: center;
+	/* background-color: white */
+}
+h3{    
+	float: center;
+	background-color: #1a1a1a;
+   color: white;
+   font-style: Livvic;
 }

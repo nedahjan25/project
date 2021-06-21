@@ -1,4 +1,4 @@
- 
+
 body {
   background-attachment: fixed;
   background-size: cover;
@@ -27,15 +27,21 @@ nav{
   text-align: center;
   
 }
-h1{
-	  
+h1, h3{
+	   font-style: italic;
 	color: black;
-}
-.h2, h2 {
-    font-size: 30px;
-    margin-left: 55px;
+	 
 }
 
+ .h2, h2 {
+    font-size: 24px;
+	margin-left: 55px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+	font-style: italic;
+  }
 
 
 fieldset { 
